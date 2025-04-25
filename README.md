@@ -15,7 +15,7 @@ A customizable Next.js application with Leaflet for creating interactive maps.
 
 ### Prerequisites
 
-- Node.js (16.x or higher)
+- Node.js (18.x or higher)
 - npm or yarn
 
 ### Installation
