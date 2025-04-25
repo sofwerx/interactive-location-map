@@ -1,0 +1,77 @@
+/* src/styles/globals.css */
+/* Force leaflet map to display properly on all screen sizes */
+html, body, #__next {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set full screen on mobile */
+@media (max-width: 991.98px) {
+  #map-container {
+    height: 100vh !important;
+    width: 100vw !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 900 !important;
+  }
+  
+  .leaflet-container {
+    height: 100vh !important;
+    width: 100vw !important;
+  }
+}
+
+/* For all screen sizes */
+#map-container {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Hide the image on screens smaller than 992px (Bootstrap's lg breakpoint) */
+@media (max-width: 991.98px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+
+/* Ensure map controls are visible */
+.leaflet-control-container {
+  z-index: 910 !important;
+}
+
+/* Improved accordion styling */
+.accordion-button {
+  padding: 0.75rem 1.25rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Add smooth transitions for better UX */
+.accordion-collapse {
+  transition: height 0.3s ease;
+}
+
+/* Make map controls bigger for touch screens */
+.leaflet-touch .leaflet-control-zoom a {
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  font-size: 16px !important;
+}
+
+/* Ensure scrollable content doesn't overflow */
+.overflow-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Override Bootstrap default for accordion on mobile */
+@media (max-width: 991.98px) {
+  .accordion-body {
+    padding: 0.75rem;
+  }
+}
