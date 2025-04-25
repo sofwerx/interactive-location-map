@@ -2,7 +2,7 @@
 
 A customizable Next.js application with Leaflet for creating interactive maps.
 
-![Interactive Map Screenshot](/screenshot.png)
+![Interactive Map Screenshot](/Screenshot.png)
 
 ## Features
 
