@@ -2,6 +2,8 @@
 
 A customizable Next.js application with Leaflet for creating interactive maps.
 
+![Interactive Map Screenshot](/screenshot.png)
+
 ## Features
 
 - Interactive map with marker clusters
